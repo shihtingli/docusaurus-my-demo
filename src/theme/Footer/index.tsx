@@ -45,7 +45,7 @@ function FooterLink({ to, href, label, prependBaseUrlToHref, ...props }: FooterL
 }
 
 const FooterLogo = ({ sources, alt }: Pick<ThemedImageProps, 'sources' | 'alt'>) => (
-  <ThemedImage className="footer__logo" alt={alt} sources={sources} />
+  <ThemedImage className={`footer__logo ${styles.imgSize}`} alt={alt} sources={sources} />
 )
 
 function Footer(): JSX.Element | null {

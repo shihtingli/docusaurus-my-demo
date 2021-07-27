@@ -13,3 +13,10 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
+
+.imgSize {
+  width: 65px;
+  /* Without height undefined it won't work */
+  height: 50px;
+  /* figure out your image aspect ratio */
+}

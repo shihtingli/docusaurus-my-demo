@@ -5,11 +5,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'My Demo',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/mypage/',
+  url: 'https://shihtingli.github.io',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-tsmc.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -81,6 +81,11 @@ module.exports = {
           ],
         },
       ],
+      logo: {
+        alt: 'Facebook Open Source Logo',
+        src: 'img/Tsmc.svg.png',
+        href: 'https://opensource.facebook.com',
+      },
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
