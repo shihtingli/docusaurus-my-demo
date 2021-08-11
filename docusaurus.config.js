@@ -45,7 +45,7 @@ module.exports = {
         {
           type: 'docsVersionDropdown',
           position: 'left',
-          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          //dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
           dropdownActiveClassDisabled: true,
         },
         {
@@ -148,13 +148,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/shihtingli/docusaurus-my-demo/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/shihtingli/docusaurus-my-demo/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
