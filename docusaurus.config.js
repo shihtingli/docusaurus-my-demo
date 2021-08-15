@@ -14,6 +14,9 @@ module.exports = {
   organizationName: 'shihtingli', // Usually your GitHub org/user name.
   projectName: 'docusaurus-my-demo', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark'
+    },
     navbar: {
       title: 'My Demo',
       logo: {
@@ -64,6 +67,10 @@ module.exports = {
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -138,6 +145,20 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+  },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      zh: {
+        label: '中文',
+        direction: 'ltr',
+      },
     },
   },
   presets: [
