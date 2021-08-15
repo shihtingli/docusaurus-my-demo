@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shihtingli.guthub.io/docusaurus-my-demo/blog"/>
     <subtitle>My Demo Blog</subtitle>
-    <icon>https://shihtingli.guthub.io/docusaurus-my-demo/img/favicon-tsmc.ico</icon>
+    <icon>https://shihtingli.guthub.io/docusaurus-my-demo/img/tsmc.svg.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
