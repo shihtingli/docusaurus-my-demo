@@ -10,7 +10,7 @@ module.exports = {
   baseUrl: '/docusaurus-my-demo/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon-tsmc.ico',
+  favicon: 'img/tsmc.svg.ico',
   organizationName: 'shihtingli', // Usually your GitHub org/user name.
   projectName: 'docusaurus-my-demo', // Usually your repo name.
   themeConfig: {
