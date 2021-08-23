@@ -2,34 +2,37 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Docusaurus
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Install
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
+```console
+npx @docusaurus/init@latest init [name] [template]
 ```
 
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
+```console
+npx @docusaurus/init@latest init my-demo classic
 ```
 
-Your site starts at `http://localhost:3000`.
+```console
+cd my-demo
+npm install
+npm start
+```
 
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+## Typscript Support
+
+```console
+npm install --save-dev typescript @docusaurus/module-type-aliases @types/react @types/react-router-dom @types/react-helmet @tsconfig/docusaurus
+```
+
+Then add **tsconfig.json** to your project root with the following content:
+
+```javascript
+
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": ["src/"]
+}
+
+```
