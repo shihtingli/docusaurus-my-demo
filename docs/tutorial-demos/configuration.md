@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
+
+# Configuration
 
 [API Link](https://docusaurus.io/docs/docusaurus.config.js)
 
