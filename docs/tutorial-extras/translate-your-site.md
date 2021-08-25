@@ -16,7 +16,7 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
   },
-};
+}
 ```
 
 ## Translate a doc
@@ -66,7 +66,7 @@ module.exports = {
       ],
     },
   },
-};
+}
 ```
 
 The locale dropdown now appears in your navbar:
@@ -85,4 +85,24 @@ Or build your site to include all the locales at once:
 
 ```bash
 npm run build
+```
+
+## Translate JSON files
+
+```bash
+npm run write-translations
+npm run write-translations -- --locale zh
+```
+
+```bash
+mkdir -p i18n/fr/docusaurus-plugin-content-docs/current
+cp -r docs/** i18n/fr/docusaurus-plugin-content-docs/current
+
+mkdir -p i18n/fr/docusaurus-plugin-content-blog
+cp -r blog/** i18n/fr/docusaurus-plugin-content-blog
+
+mkdir -p i18n/fr/docusaurus-plugin-content-pages
+cp -r src/pages/**.md i18n/fr/docusaurus-plugin-content-pages
+cp -r src/pages/**.mdx i18n/fr/docusaurus-plugin-content-pages
+
 ```
