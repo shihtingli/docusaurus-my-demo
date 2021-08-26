@@ -1,8 +1,19 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+---
+sidebar_position: 1
+---
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+# 設定檔
+
+[API Link](https://docusaurus.io/docs/docusaurus.config.js)
+
+**docusaurus.config.js** contains configurations for your site and is placed in the root directory of your site.
+
+- title
+- baseUrl
+- favicon
+
+```json=
+{
   title: 'Doc Demo',
   tagline: 'Docusaurus is cool',
   // url: 'https://docusaurus-my-demo.vercel.app',
@@ -11,12 +22,32 @@ module.exports = {
   favicon: 'img/tsmc.svg.ico',
   organizationName: 'shihtingli', // Usually your GitHub org/user name.
   projectName: 'docusaurus-my-demo', // Usually your repo name.
-  themeConfig: {
+  projectName: 'docusaurus-my-demo', // Usually your repo name.
+//...
+}
+```
+
+## Theme Configuration
+
+```json=
+themeConfig: {
+    // ...
     colorMode: {
-      defaultMode: 'dark'
-    },
+      // "light" | "dark"
+      defaultMode: 'light',
+    // ...
+    }
+}
+
+```
+
+- navbar
+
+```json=
+themeConfig: {
+   //...
     navbar: {
-      title: 'Doc Demo',
+      title: 'My Demo',
       logo: {
         alt: 'My Demo Logo',
         src: 'img/Tsmc.png',
@@ -55,6 +86,12 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
+        //{
+        //  type: 'doc',
+        //  docId: 'tutorial-basics/create-a-page',
+        //  position: 'left',
+        //  label: 'create a page',
+        //},
         {to: '/demo', label: 'Demo Page', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -67,8 +104,20 @@ module.exports = {
         },
       ],
     },
-    footer: {
+
+```
+
+- footer
+
+```json=
+footer: {
       style: 'dark',
+      logo: {
+        alt: 'Facebook Open Source Logo',
+        src: 'img/Tsmc.png',
+        href: 'https://opensource.facebook.com',
+      },
+      copyright: `Copyright © Taiwan Semiconductor Manufacturing Company Limited${new Date().getFullYear()} All Rights Reserved.`,
       links: [
         {
           title: 'Docs',
@@ -100,60 +149,19 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More Demo',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
+        // ...
       ],
-      logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'img/Tsmc.png',
-        href: 'https://opensource.facebook.com',
-      },
-      copyright: `Copyright © Taiwan Semiconductor Manufacturing Company Limited${new Date().getFullYear()} All Rights Reserved.`,
+
     },
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
-  },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
-      zh: {
-        label: '中文',
-        direction: 'ltr',
-      },
-    },
-  },
-  presets: [
+
+```
+
+### Plugin
+
+- editUrl
+
+```json=
+ presets: [
     [
       '@docusaurus/preset-classic',
       {
@@ -175,4 +183,7 @@ module.exports = {
       },
     ],
   ],
-};
+
+```
+
+---

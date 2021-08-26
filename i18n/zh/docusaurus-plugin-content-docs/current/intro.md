@@ -20,7 +20,7 @@ npm install
 npm start
 ```
 
-## Typscript 支持
+## Typescript 支持
 
 ```console
 npm install --save-dev typescript @docusaurus/module-type-aliases @types/react @types/react-router-dom @types/react-helmet @tsconfig/docusaurus

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Deploy your site
@@ -24,6 +24,12 @@ Test your production build locally:
 
 ```bash
 npm run serve
+```
+
+## Deploy to Github Page
+
+```bash
+GIT_USER=<GITHUB_USERNAME> yarn deploy
 ```
 
 The `build` folder is now served at `http://localhost:3000/`.
