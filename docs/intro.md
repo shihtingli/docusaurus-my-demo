@@ -17,7 +17,7 @@ npx @docusaurus/init@latest init my-demo classic
 ```console
 cd my-demo
 npm install
-npm start --poll true
+npm start
 ```
 
 ## Typescript Support

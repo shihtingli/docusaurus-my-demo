@@ -1,18 +1,18 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
+    "message": "文件",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "Community",
+    "message": "社群",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "其他",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.title.More Demo": {
-    "message": "More Demo",
+    "message": "更多範例",
     "description": "The title of the footer links column with title=More Demo in the footer"
   },
   "link.item.label.Tutorial": {

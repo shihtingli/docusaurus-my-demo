@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Doc Demo",
+    "message": "Doc 範例",
     "description": "The title in the navbar"
   },
   "item.label.Community": {
-    "message": "Community",
+    "message": "社群",
     "description": "Navbar item with label Community"
   },
   "item.label.Tutorial": {
@@ -16,7 +16,7 @@
     "description": "Navbar item with label create a page"
   },
   "item.label.Demo Page": {
-    "message": "Demo Page",
+    "message": "示範頁面",
     "description": "Navbar item with label Demo Page"
   },
   "item.label.GitHub": {
