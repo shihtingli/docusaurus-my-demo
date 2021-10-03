@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Docusaurus
+# Docusaurus 第一步!!
 
 ## 安裝
 
@@ -17,7 +17,7 @@ npx @docusaurus/init@latest init my-demo classic
 ```console
 cd my-demo
 npm install
-npm start
+npm start --poll true
 ```
 
 ## Typescript 支持

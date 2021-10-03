@@ -5,7 +5,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Doc Demo',
   tagline: 'Docusaurus is cool',
-  // url: 'https://docusaurus-my-demo.vercel.app',
   url: 'https://shihtingli.guthub.io',
   baseUrl: '/docusaurus-my-demo/',
   favicon: 'img/tsmc.svg.ico',
@@ -32,14 +31,9 @@ module.exports = {
               href: 'https://www.facebook.com',
             },
             // {
-            //   type: 'doc',
             //   label: 'Tutorial',
-            //   docId: 'intro',
+            //   to: 'docs/intro',
             // },
-            {
-              label: 'Tutorial',
-              to: 'docs/intro',
-            },
             // ... more items
           ]
         },
@@ -49,12 +43,12 @@ module.exports = {
           //dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
           dropdownActiveClassDisabled: true,
         },
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'intro',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
         {to: '/demo', label: 'Demo Page', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -143,10 +137,10 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'zh'],
     localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
+      // en: {
+      //   label: 'English',
+      //   direction: 'ltr',
+      // },
       zh: {
         label: '中文',
         direction: 'ltr',
